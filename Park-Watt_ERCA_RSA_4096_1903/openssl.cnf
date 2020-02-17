@@ -8,8 +8,8 @@ pkcs11 = pkcs11_section
 
 [pkcs11_section]
 engine_id = pkcs11
-dynamic_path = /usr/lib64/engines-1.1/pkcs11.so
-MODULE_PATH = ${ENV::HOME}/local/lib/pkcs11/opensc-pkcs11.so
+dynamic_path = /usr/lib64/openssl/engines/libpkcs11.so
+MODULE_PATH = /usr/lib64/pkcs11/opensc-pkcs11.so
 #MODULE_PATH = /usr/lib64/pkcs11-spy.so
 init = 0
 
@@ -52,7 +52,7 @@ default_md = sha512
 default_crl_days = 365
 
 [policy_any_section]
-countryName            = supplied
+countryName            = optional
 stateOrProvinceName    = optional
 organizationName       = optional
 organizationalUnitName = optional
