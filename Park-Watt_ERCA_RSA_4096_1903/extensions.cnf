@@ -4,7 +4,7 @@ extendedKeyUsage=serverAuth,clientAuth
 basicConstraints = critical, CA:true
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid
-crlDistributionPoints=URI:http://pki.park-watt.co.uk/PARK_WATT_ROOT.crl
+crlDistributionPoints=URI:http://pki.park-watt.co.uk/PARK_WATT_ERCA_RSA_4096_1903.crl
 #authorityInfoAccess=OCSP;URI:http://ocsp.my.host/
 
 [ext_intermediate_restricted_pathlen0]
@@ -13,5 +13,5 @@ extendedKeyUsage=serverAuth,clientAuth
 basicConstraints = critical, CA:true, pathlen:0
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid
-crlDistributionPoints=URI:http://pki.park-watt.co.uk/PARK_WATT_ROOT.crl
+crlDistributionPoints=URI:http://pki.park-watt.co.uk/PARK_WATT_ERCA_RSA_4096_1903.crl
 #authorityInfoAccess=OCSP;URI:http://ocsp.my.host/

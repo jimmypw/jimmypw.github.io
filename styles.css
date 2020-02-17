@@ -11,3 +11,7 @@ th, td {
 th {
   text-align: left;
 }
+
+tr.dead {
+  text-decoration: line-through; 
+}

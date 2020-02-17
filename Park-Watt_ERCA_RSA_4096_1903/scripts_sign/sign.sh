@@ -1,7 +1,7 @@
 export OPENSSL_CONF=openssl.cnf 
 
 # Write a random serial number to serial.txt
-SERIAL=$(openssl rand -engine pkcs11 128 | od -vAn -N8 -tu8 | tr -d ' ')
+SERIAL=$(./util/serialgen)
 echo ${SERIAL} > attic/serial.txt
 
 openssl ca -engine pkcs11 \
